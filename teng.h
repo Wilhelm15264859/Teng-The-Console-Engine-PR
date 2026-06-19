@@ -1,5 +1,5 @@
-#ifndef TENG-HEADER_H
-#define TENG-HEADER_H
+#ifndef TENG_H
+#define TENG_H
 
 //скобки бессмысленные если нет параметров
 #define clear printf("\033[2J\033[H")
