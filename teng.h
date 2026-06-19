@@ -9,6 +9,8 @@
 typedef struct {
     const int width;
     const int height;
+
+    size_t size;
     char* buffer;
 } area_t;
 
@@ -26,12 +28,14 @@ void update(area_t area);
 //change_buffer - обновляет буфер в зоне
 //  area   - зона для обновления
 //  buffer - новый буфер
-void change_buffer(area_t area, char buffer[]);
+//  size   - размер буфера
+void change_buffer(area_t area, char buffer[], size_t size);
 
 //update_with_buffer - обновляет зону и вносит изменения в терминал
 //  area   - зона для обновления
 //  buffer - новый буфер
-void update_with_buffer(area_t area, char buffer[]);
+//  size   - размер буфера
+void update_with_buffer(area_t area, char buffer[], size_t size);
 
 //push_char - добавлят символ в зону и обновляет терминал
 //  area      - зона для обновления
